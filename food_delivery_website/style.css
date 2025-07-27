@@ -1,0 +1,79 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f0eb;
+  color: #333;
+}
+.hero {
+  background: url('https://source.unsplash.com/1600x400/?food,texture') center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; }
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform .2s;
+}
+.menu-card:hover { transform: scale(1.03); }
+.menu-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background: #eee;
+}
+.menu-info {
+  padding: 15px;
+}
+.menu-info h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.menu-info p {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.menu-info button {
+  background: #e76f51;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.menu-info button:hover { background: #f37251; }
+
+.cart {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.cart h2 { margin-bottom: 15px; }
+#cart-list li { margin-bottom: 10px; list-style: none; }
+#checkout {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#checkout:hover { background: #21867a; }
